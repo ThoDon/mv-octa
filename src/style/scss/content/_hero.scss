@@ -1,0 +1,66 @@
+.hero__bg {
+	background-image: url(../../static/images/hero.png);
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	padding: 1.5rem;
+	flex: 1;
+	align-items: flex-start;
+
+	@media only screen and (min-width: $bp-small) {
+		height: 300px;
+	}
+	@media only screen and (min-width: $bp-medium) {
+		height: 350px;
+	}
+	@media only screen and (min-width: $bp-large) {
+		height: 415px;
+		padding: 0 4rem;
+	}
+}
+
+.hero__more {
+	display: none;
+	@media only screen and (min-width: $bp-small) {
+		color: $octa-blue;
+		writing-mode: vertical-rl;
+		text-orientation: mixed;
+		transform-origin: center;
+		text-align: center;
+		transform: rotate(180deg);
+		flex: 0 0 100px;
+		font-weight: bold;
+		font-size: 0.875rem;
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+.hero__scroll-pin {
+	transform: rotate(180deg);
+	max-width: 5rem;
+	margin-bottom: 1rem;
+	@media only screen and (min-width: $bp-medium) {
+		margin-bottom: 2rem;
+	}
+}
+
+.hero__title {
+	font-size: 1.5rem;
+	font-weight: normal;
+	margin-bottom: 2rem;
+	@media only screen and (min-width: $bp-small) {
+		font-size: 2.5rem;
+	}
+	@media only screen and (min-width: $bp-medium) {
+		font-size: 3rem;
+		margin-right: 40%;
+	}
+	@media only screen and (min-width: $bp-large) {
+		font-size: 3.5rem;
+		margin-right: 50%;
+	}
+}

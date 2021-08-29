@@ -1,0 +1,13 @@
+.button {
+	display: inline-block;
+	background-color: $octa-blue--light;
+	padding: 0.75rem 1.5rem;
+	color: $octa-white;
+	font-weight: bold;
+	border-radius: 50px;
+}
+
+.button--white {
+	background-color: $octa-white;
+	color: $octa-blue;
+}

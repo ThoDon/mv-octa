@@ -1,0 +1,10 @@
+.section {
+	background: $octa-white;
+}
+
+.section--hero {
+	background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 40%, rgba(241, 244, 250, 1) 40%, rgba(241, 244, 250, 1) 100%);
+	color: $octa-white;
+	display: flex;
+	justify-content: flex-start;
+}

@@ -1,13 +1,12 @@
-@import "_variables";
-
 .header__nav {
 	display: flex;
 	background-color: $octa-white;
 	flex-wrap: wrap;
 	@media only screen and (min-width: $bp-large) {
+		height: 120px;
 		flex-direction: row;
 		justify-content: space-between;
-		align-items: center;
+		align-items: stretch;
 		flex-wrap: nowrap;
 	}
 }
@@ -31,6 +30,7 @@
 .nav__container--right {
 	background-color: $octa-blue;
 	color: $octa-white;
+	padding-left: 4rem;
 }
 
 .nav__container {
@@ -51,6 +51,7 @@
 .nav__logo-link {
 	margin-right: auto;
 	padding: 1rem;
+	align-self: center;
 }
 
 .js-hamburger-menu {
@@ -69,6 +70,7 @@
 	font-weight: bold;
 	border-top: 2px solid transparent;
 	border-bottom: 2px solid transparent;
+	align-self: stretch;
 	@media only screen and (min-width: $bp-small) {
 		flex-basis: 15%;
 	}
@@ -76,12 +78,14 @@
 		&:hover {
 			border-bottom: 2px solid $octa-red;
 		}
-		padding: 3rem 1rem;
+		display: flex;
+		padding: 0 1rem;
 	}
 }
 
 .item__link {
 	transition: color 1s;
+	align-self: center;
 	&:hover {
 		color: $octa-blue;
 	}

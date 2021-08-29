@@ -1,0 +1,18 @@
+.intro__decoy {
+	max-width: 520px;
+	padding: 1.25rem 0;
+}
+
+.intro__subtitle {
+	font-size: 1.875rem;
+	font-family: $font-din;
+	font-weight: normal;
+	&:after {
+		content: "";
+		display: block;
+		width: 30px;
+		border-top: 2px solid $octa-red;
+		margin: 0 auto;
+		margin-top: 0.875rem;
+	}
+}

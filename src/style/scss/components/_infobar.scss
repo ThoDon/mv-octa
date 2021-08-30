@@ -1,0 +1,40 @@
+.info-bar__title {
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: $octa-blue;
+	padding-bottom: 1rem;
+}
+.info-bar__text {
+	font-size: 1rem;
+	font-weight: 400;
+	color: $octa-lia;
+	font-family: $font-din;
+	padding-bottom: 1rem;
+}
+
+.info-bar__item {
+	margin-bottom: 1.5rem;
+	text-align: center;
+	padding: 0 2rem;
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+	&:nth-of-type(2) {
+		border-top: 1px solid #7f8eaa30;
+		border-bottom: 1px solid #7f8eaa30;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+	@media only screen and (min-width: $bp-medium) {
+		margin-bottom: 0;
+		text-align: left;
+		&:nth-of-type(2) {
+			border-top: 0;
+			border-bottom: 0;
+			border-left: 1px solid #7f8eaa30;
+			border-right: 1px solid #7f8eaa30;
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+	}
+}

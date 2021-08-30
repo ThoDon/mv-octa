@@ -5,8 +5,7 @@
 .section__title {
 	flex: 1 1 100%;
 	text-align: center;
-	margin-bottom: 2rem;
-	font-size: 1.5rem;
+	font-size: 2.5rem;
 	font-weight: normal;
 	color: $octa-blue;
 	@media only screen and (min-width: $bp-small) {
@@ -24,6 +23,14 @@
 	text-align: center;
 	margin: 0 auto;
 	@media only screen and (min-width: $bp-medium) {
+		&:first-of-type {
+			padding-right: 20px;
+		}
+		&:last-of-type {
+			padding-left: 20px;
+		}
+	}
+	@media only screen and (min-width: $bp-large) {
 		&:first-of-type {
 			padding-right: 10px;
 		}
@@ -48,17 +55,21 @@
 	justify-content: center;
 }
 
-.section__container--constrained:first-of-type {
+.section__container--constrained-left {
+	padding-bottom: 2rem;
 	@media only screen and (min-width: $bp-large) {
 		margin: 0 0 0 auto;
 		padding-right: 75px;
+		padding-left: 60px;
+		padding-bottom: 0;
 	}
 }
 
-.section__container--constrained:last-of-type {
+.section__container--constrained-right {
 	@media only screen and (min-width: $bp-large) {
 		margin: 0 auto 0 0;
 		padding-left: 75px;
+		padding-right: 60px;
 	}
 }
 
@@ -78,6 +89,46 @@
 	@media only screen and (min-width: $bp-medium) {
 		flex-direction: row;
 		flex-wrap: wrap;
-		padding: 4.375rem 1.5rem 5rem;
+		padding: 4.375rem 0rem 5rem;
 	}
+}
+
+.section--why {
+	display: flex;
+	flex-wrap: wrap;
+	background: linear-gradient(180deg, $octa-grey 0%, $octa-grey 60%, $octa-white 60%, $octa-white 100%);
+	padding: 1.5rem;
+}
+
+.section__image {
+	object-fit: cover;
+}
+
+.section__info-bar {
+	flex: 1 1 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: $octa-white;
+	margin-top: 2rem;
+	padding: 1.5rem;
+	@media only screen and (min-width: $bp-medium) {
+		flex-direction: row;
+		padding: 3rem 1.5rem;
+		margin-top: -0.5rem;
+	}
+	@media only screen and (min-width: $bp-large) {
+		margin-left: 25%;
+		margin-top: -3rem;
+		max-width: 90%;
+		margin-left: auto;
+	}
+	@media only screen and (min-width: $bp-extralarge) {
+		margin-top: -7rem;
+	}
+}
+
+.section__subtitle {
+	font-size: 1.125rem;
+	font-weight: 600;
+	font-family: $font-din;
 }
